@@ -16,7 +16,7 @@ const Navbar = () => {
     <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }}to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
     <li onClick={()=>{setMenu("exhuasts")}}><Link style={{ textDecoration: 'none' }} to='/exhausts'>Exhuasts</Link>{menu==="exhuasts"?<hr/>:<></>}</li>
     <li onClick={()=>{setMenu("levers")}}><Link style={{ textDecoration: 'none' }} to='/levers'>Levers</Link>{menu==="levers"?<hr/>:<></>}</li>
-    <li onClick={()=>{setMenu("tail")}}><Link style={{ textDecoration: 'none' }} to='/tail'>Tail Tidies</Link>{menu==="tail"?<hr/>:<></>}</li>
+    <li onClick={()=>{setMenu("tail")}}><Link style={{ textDecoration: 'none' }} to='/tail'>Fender Eliminators</Link>{menu==="tail"?<hr/>:<></>}</li>
     <li onClick={()=>{setMenu("windshields")}}><Link style={{ textDecoration: 'none' }} to='/windshields'>Wind Shields</Link>{menu==="windshields"?<hr/>:<></>}</li>
     <li onClick={()=>{setMenu("mirrors")}}><Link style={{ textDecoration: 'none' }} to='mirrors'>Mirrors</Link>{menu==="mirrors"?<hr/>:<></>}</li>
   </ul>
