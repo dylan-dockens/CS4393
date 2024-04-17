@@ -28,6 +28,7 @@ const ShopContextProvider = (props)=>{
             console.log("made");
             let totalAmount = 0;
             for (let index = 0; index < Object.keys(cartItems).length; index++) {
+                console.log("index:" + index);
                 if(cartItems[index] > 0){
                     console.log("made it2");
                     let itemInfo = all_product.find((product)=>product.id===Number(index));
@@ -35,12 +36,24 @@ const ShopContextProvider = (props)=>{
                     totalAmount += itemInfo.new_price * cartItems[index];
                 }
                 console.log(totalAmount);
+            }
                 return totalAmount;
                 
-            }
+            
             
         }
-        const contextValue = {all_product, cartItems,addToCart, removeFromCart, getTotalCartAmount};
+
+            const getTotalCartItems = () =>{
+                    let totalItems = 0;
+                    for(const item in cartItems){
+                        if(cartItems[item] > 0){
+                            totalItems += cartItems[item];
+                        }
+                    }
+                    return totalItems;
+            }
+
+        const contextValue = {all_product, cartItems,addToCart, removeFromCart, getTotalCartAmount, getTotalCartItems};
 
         return(
             <ShopContext.Provider value={contextValue}>

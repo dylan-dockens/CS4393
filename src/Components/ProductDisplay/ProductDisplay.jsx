@@ -34,19 +34,10 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
         <div className="productdisplay-right-description">
-            this is a fake description that i will change later
+            Description of product
         </div>
-        <div className="productdisplay-right-size">
-            <h1>Select Size</h1>
-            <div className="productdisplay-right-sizes">
-              <div>S</div>
-              <div>M</div>
-              <div>L</div>
-              <div>XL</div>
-            </div>
-        </div>
+        
         <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-        <p className="productdisplay-right-category"><span>Catgory :</span>women, tshirt</p>
       </div>
     </div>
   )
