@@ -22,7 +22,7 @@ const LoginSignup = () => {
     /*let responseData;
     await fetch('http:// :4000/signup',{
       method:post,
-      
+       Hello
     })*/
   }
 
