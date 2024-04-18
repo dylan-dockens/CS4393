@@ -5,13 +5,15 @@ import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
+import Checkout from './Pages/Checkout';
+import OrderPlaced from './Pages/OrderPlaced';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
-import exhausts_banner from './Components/Assets/exhaust_banner.png'
-import levers_banner from './Components/Assets/levers_banner.png'
-import mirrors_banner from './Components/Assets/mirrors_banner.png'
-import windshields_banner from './Components/Assets/windshields_banner.png'
-import tail_banner from './Components/Assets/tail_banner.png'
+import exhausts_banner from './Components/Assets/exhaust_banner.png';
+import levers_banner from './Components/Assets/levers_banner.png';
+import mirrors_banner from './Components/Assets/mirrors_banner.png';
+import windshields_banner from './Components/Assets/windshields_banner.png';
+import tail_banner from './Components/Assets/tail_banner.png';
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,8 @@ function App() {
           <Route path=':productId' element={<Product/>}/>
         </Route>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/orderplaced' element={<OrderPlaced/>}/>
         <Route path='/Login' element={<LoginSignup/>}/>
       </Routes>
       <Footer/>

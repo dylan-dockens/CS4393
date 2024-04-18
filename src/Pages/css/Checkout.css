@@ -1,0 +1,47 @@
+.main-form{
+    margin: 100px 170px;
+}
+
+.shipping-form{
+    display: inline;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.shipping-form pre, input {
+    margin-top: 20px;
+    font-size: 0.2in;
+}
+
+
+
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
