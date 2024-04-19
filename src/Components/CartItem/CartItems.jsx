@@ -53,7 +53,7 @@ const CartItems = () => {
                         <h3>${getTotalCartAmount()}</h3>
                     </div>
                 </div>
-                <button><Link style={{textDecoration: 'none'}} to='/checkout'>Checkout</Link></button>
+                <Link style={{textDecoration: 'none'}} to='/checkout'><button>Checkout</button></Link>
             </div>
         </div>
       </div>
