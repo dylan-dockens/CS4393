@@ -1,18 +1,40 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './css/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
 import dropdown_icon from '../Components/Assets/dropdown_icon.png'
 import Item from '../Components/Item/Item'
 const ShopCategory = (props) => {
-  const {all_product} = useContext(ShopContext)
+  const {all_product} = useContext(ShopContext);
+
+  const getFilteredItems = (query, items) => {
+    if (!query){
+      return items;
+    }
+    return items.filter((product) => product.name.includes(query));
+  }
+
+  const [query, setQuery] = useState("");
+
+  const items = all_product;
   return (
+
+    
+    
     <div className='shop-category'>
+      
       <div className='banner'><h1 className="title">{props.title}</h1><img className="shop-category-banner" src={props.banner} alt=""></img></div>
       <div className="shopcategory-indexSort">
         <div className="shopcategory-sort">
           Sort by <img src={dropdown_icon} alt=""></img>
         </div>
       </div>
+      <div className="search">
+      <h1>Search</h1>
+      <div>
+      <input className = "searchBar" placeholder="Search" onChange={}/>
+    </div>
+   
+    </div>
       <div className="shopcategory-products">
         {all_product.map((item, i)=>{
           if(props.category===item.category){
