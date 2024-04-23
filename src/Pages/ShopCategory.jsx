@@ -31,7 +31,7 @@ const ShopCategory = (props) => {
       <div className="search">
       <h1>Search</h1>
       <div>
-      <input className = "searchBar" placeholder="Search" onChange={}/>
+      <input className = "searchBar" placeholder="Search" onChange={(e) => setQuery(e.target.value)}/>
     </div>
    
     </div>
